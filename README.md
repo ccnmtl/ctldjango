@@ -1,0 +1,2 @@
+# ctldjango
+Django project template

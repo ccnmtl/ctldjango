@@ -44,6 +44,12 @@ $ django-admin.py startproject \
 no punctuation, etc). It will create a directory called
 `project_name` that has a django project in it.
 
+### Setup hidden files
+* `mv travis.yml .travis.yml` to activate Travis CI integration
+* `mv gitignore .gitignore` to configure git ignore
+* `mv eslintrc.js .eslintrc.js` to configure eslint
+* `mv bandit .bandit` to configure bandit security linting
+
 ### Check it in
 * Check the project into version control now.
 
@@ -103,5 +109,5 @@ want to do a `./manage.py startapp` to create your own application
 within the project and so on.
 
 ### A few loose ends
+* Update the README.md
 * Update the `Project Name` string in `base.html` with your application's display name.
-

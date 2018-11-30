@@ -2,6 +2,9 @@
 implement CTL specific functionality and configuration.
 
 ## What's Included
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/ccnmtl/ctldjango.svg)](https://greenkeeper.io/)
+
 * Default to Python3
 * Django Wind (a Django bridge to Columbia's central auth service -
   http://www.jasig.org/cas/deployments/columbia-university)

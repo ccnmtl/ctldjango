@@ -1,4 +1,4 @@
-Django==2.1.4
+Django==2.1.5
 pytz==2018.9
 httplib2==0.12.0
 feedparser==5.2.1
@@ -69,10 +69,10 @@ rcssmin==1.0.6  # django-compressor
 rjsmin==1.0.12  # django-compressor
 django-compressor==2.2
 django-statsd-mozilla==0.4.0
-raven==6.9.0
+raven==6.10.0
 django-bootstrap4==0.0.7
 django-debug-toolbar==1.11
-django-waffle==0.15.0
+django-waffle==0.15.1
 django-jenkins==0.110.0
 django-smoketest==1.1.0
 typing==3.6.6  # For django-extensions
@@ -99,7 +99,7 @@ django-cacheds3storage==0.1.2
 
 nameparser==1.0.2
 oauth2==1.9.0.post1
-oauthlib==2.1.0
+oauthlib==3.0.0
 pylti==0.7.0
 django-lti-provider==0.3.3
 

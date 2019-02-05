@@ -53,6 +53,10 @@ no punctuation, etc). It will create a directory called
 * `mv eslintrc.js .eslintrc.js` to configure eslint
 * `mv bandit .bandit` to configure bandit security linting
 
+### Misc
+* Update the README.md
+* Update the `Project Name` string in `base.html` with your application's display name.
+
 ### Check it in
 * Check the project into version control now.
 
@@ -110,7 +114,3 @@ you can put content on the web right away.
 From this point out, it's basic django development. You'll probably
 want to do a `./manage.py startapp` to create your own application
 within the project and so on.
-
-### A few loose ends
-* Update the README.md
-* Update the `Project Name` string in `base.html` with your application's display name.

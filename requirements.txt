@@ -93,7 +93,7 @@ ccnmtlsettings==1.5.0
 django-reversion==3.0.3
 text_unidecode==1.2
 
-django-taggit==0.23.0
+django-taggit==0.24.0
 
 django-cacheds3storage==0.1.2
 

@@ -40,7 +40,7 @@ pyasn1==0.4.5
 cryptography==2.6.1  # pyOpenSSL
 pyOpenSSL==19.0.0
 ndg-httpsclient==0.5.1
-urllib3==1.24.1  # requests
+urllib3==1.24.2  # requests
 chardet==3.0.4  # requests
 idna==2.8  # requests
 certifi==2019.3.9  # requests

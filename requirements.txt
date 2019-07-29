@@ -35,7 +35,7 @@ pygments==2.4.2  # ipython
 scandir==1.10.0  # ipython
 ipython==7.6.1
 ipdb==0.12.1
-coverage==4.5.3
+coverage==4.5.4
 pyasn1==0.4.5
 cryptography==2.7  # pyOpenSSL
 pyOpenSSL==19.0.0

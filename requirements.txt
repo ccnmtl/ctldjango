@@ -1,5 +1,5 @@
 Django==2.2.4
-pytz==2019.1
+pytz==2019.2
 httplib2==0.13.1
 feedparser==5.2.1
 Markdown==2.6.11 # pyup: < 3
@@ -34,9 +34,9 @@ prompt_toolkit==2.0.9  # ipython
 pygments==2.4.2  # ipython
 scandir==1.10.0  # ipython
 ipython==7.7.0
-ipdb==0.12.1
+ipdb==0.12.2
 coverage==4.5.4
-pyasn1==0.4.5
+pyasn1==0.4.6
 cryptography==2.7  # pyOpenSSL
 pyOpenSSL==19.0.0
 ndg-httpsclient==0.5.1
@@ -106,7 +106,7 @@ pyparsing==2.4.2
 edtf==3.0.0 # pyup: <4.0.0
 
 pbr==5.4.1 # bandit
-pyyaml==5.1.1 # bandit
+pyyaml==5.1.2 # bandit
 stevedore==1.30.1  # bandit
 bandit==1.6.2
 

@@ -33,7 +33,7 @@ wcwidth==0.1.7  # ipython
 prompt_toolkit==2.0.9  # ipython
 pygments==2.4.2  # ipython
 scandir==1.10.0  # ipython
-ipython==7.7.0
+ipython==7.8.0
 ipdb==0.12.2
 coverage==4.5.4
 pyasn1==0.4.6

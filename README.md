@@ -54,7 +54,7 @@ no punctuation, etc). It will create a directory called
 * `mv bandit .bandit` to configure bandit security linting
 
 ### Misc
-* Update the README.md
+* Clear the README.md and add a bit about your project.
 * Update the `Project Name` string in `base.html` with your application's display name.
 
 ### Check it in

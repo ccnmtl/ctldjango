@@ -1,6 +1,9 @@
 # flake8: noqa
 from {{project_name}}.settings_shared import *
 from ccnmtlsettings.production import common
+from django.conf import settings
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
 
 locals().update(
     common(
@@ -18,3 +21,10 @@ try:
     from {{project_name}}.local_settings import *
 except ImportError:
     pass
+
+# Define SENTRY_DSN in local_settings.py
+if hasattr(settings, 'SENTRY_DSN'):
+    sentry_sdk.init(
+        dsn=SENTRY_DSN,
+        integrations=[DjangoIntegration()],
+    )

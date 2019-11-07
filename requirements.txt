@@ -44,7 +44,7 @@ chardet==3.0.4  # requests
 idna==2.8  # requests
 certifi==2019.9.11  # requests, sentry-sdk
 requests==2.22.0
-astroid==2.3.2
+astroid==2.3.3
 pylint==2.4.3
 six==1.13.0
 ipaddress==1.0.23  # faker

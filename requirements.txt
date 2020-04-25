@@ -4,7 +4,7 @@ httplib2==0.17.3
 feedparser==5.2.1
 Markdown==2.6.11 # pyup: < 3
 psycopg2==2.8.5
-Pillow==7.1.1
+Pillow==7.1.2
 versiontools==1.9.1
 statsd==3.3.0
 pep8==1.7.1

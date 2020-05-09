@@ -1,5 +1,5 @@
 Django==3.0.6
-pytz==2019.2
+pytz==2020.1
 httplib2==0.17.3
 feedparser==5.2.1
 Markdown==2.6.11 # pyup: < 3
@@ -30,7 +30,7 @@ idna==2.9  # requests
 certifi==2020.4.5.1  # requests, sentry-sdk
 requests==2.23.0
 astroid==2.3.3
-pylint==2.5.0
+pylint==2.5.2
 six==1.14.0
 ipaddress==1.0.23  # faker
 faker==4.0.3  # factory_boy

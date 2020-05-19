@@ -99,6 +99,6 @@ stevedore==1.32.0  # bandit
 bandit==1.6.2
 
 django-smtp-ssl==1.0
-django-contact-us==0.4.2
+django-contact-us==0.4.3
 
 entrypoints==0.3

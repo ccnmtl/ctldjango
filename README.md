@@ -6,14 +6,10 @@ implement CTL specific functionality and configuration.
 [![Greenkeeper badge](https://badges.greenkeeper.io/ccnmtl/ctldjango.svg)](https://greenkeeper.io/)
 
 * Default to Python3
-* Django Wind (a Django bridge to Columbia's central auth service -
-  http://www.jasig.org/cas/deployments/columbia-university)
-  is included and configured by default so our apps can use WIND
-  for auth automatically. Ie, anyone with a Columbia UNI by
-  default will have an account. The CCNMTL developer UNIs are
-  automatically set up as superusers, and the group affil that
-  CCNMTL staff all have gets automatically mapped to staff. These
-  are generally useful defaults for us.
+* [django-cas-ng](https://github.com/django-cas-ng/django-cas-ng)
+  configured for Columbia's central auth service -
+  http://www.jasig.org/cas/deployments/columbia-university
+  Anyone with a Columbia UNI by default will have an account.
 * virtualenv and pip setup
 * a nice Makefile for common build, test, and run tasks
 * settings split for dev/prod/staging
@@ -103,9 +99,8 @@ Your application is ready to run now:
     $ make runserver
 
 will start a server on `http://localhost:8000/`. The admin app should
-be accessible (via a user account created with 
-`manage.py createsuperuser`, or via WIND to tlc users (or ones specified 
-in the `WIND_SUPERUSER_MAPPER_GROUPS` list in `settings_shared.py`). 
+be accessible (via a user account created with
+`manage.py createsuperuser`)
 So go ahead and login to `http://localhost:8000/admin/`
 
 Even without any application specific code, `flatpages` is included so

@@ -41,10 +41,17 @@ factory_boy==2.12.0
 ldap3==2.8.1
 sqlparse==0.3.1
 
-boto==2.49.0
+# boto3 deps
+s3transfer==0.3.3
+jmespath==0.10.0
+
+botocore>=1.12.198,<1.20.0
+boto3>=1.9.198,<1.17.0
+
 python-dateutil==2.8.1
 
-djangowind==1.2.3
+python-cas==1.5.0
+requirements/src/django_cas_ng-4.1.2ctl-py2.py3-none-any.whl
 django-indexer==0.3.0
 django-templatetag-sugar==1.0
 django-paging==0.2.5
@@ -71,10 +78,10 @@ django-markwhat==1.6.2
 gunicorn==20.0.4
 django-infranil==1.1.0
 django-flatblocks==0.9.4
-django-storages==1.9.1
 
 djangorestframework==3.11.0
 
+django-storages==1.10.1
 ccnmtlsettings==1.9.0
 
 django-reversion==3.0.7

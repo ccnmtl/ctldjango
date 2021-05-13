@@ -38,6 +38,14 @@ $ django-admin.py startproject \
   --extension=py,yml \
   project_name
 ```
+Note: On MacOS, sometimes an SSL error will occur when attempting to download the master.zip in this way. To get around this, download a copy of the ctldjango master.zip to your desktop, then execute:
+```bash
+$ django-admin.py startproject \
+  --template=~/Desktop/ctldjango-master.zip \
+  --name=Dockerfile,Makefile,package.json,stats.html \
+  --extension=py,yml \
+  project_name
+```
 
 `project_name` should be a python module name (ie, lowercase,
 no punctuation, etc). It will create a directory called

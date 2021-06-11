@@ -32,7 +32,7 @@ idna==2.10  # requests
 certifi==2021.5.30  # requests, sentry-sdk
 requests==2.25.1
 
-astroid==2.4.1
+astroid==2.5.8
 pylint==2.5.2
 
 six==1.16.0
@@ -83,7 +83,7 @@ django-flatblocks==1.0.0
 
 djangorestframework==3.11.0
 
-django-storages==1.10.1
+django-storages==1.11.1
 ccnmtlsettings==1.9.0
 
 django-reversion==3.0.7

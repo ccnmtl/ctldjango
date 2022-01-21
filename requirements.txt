@@ -100,7 +100,7 @@ oauthlib==3.1.1
 pylti==0.7.0
 django-lti-provider==0.4.7
 
-pyparsing==3.0.6
+pyparsing==3.0.7
 edtf==4.0.1 # pyup: <4.0.0
 
 pbr==5.8.0 # bandit

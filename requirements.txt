@@ -1,7 +1,7 @@
 Django>=3.2.12,<4
 pytz==2022.1
 httplib2==0.20.4
-feedparser==6.0.8
+feedparser==6.0.10
 Markdown==3.3.7 # pyup: < 3
 psycopg2==2.9.3
 versiontools==1.9.1
@@ -20,7 +20,7 @@ cssselect==1.1.0
 lxml==4.8.0
 fuzzywuzzy==0.18.0
 sure==2.0.0
-coverage==6.3.3
+coverage==6.4
 pyasn1==0.4.8
 cryptography==37.0.2  # pyOpenSSL
 pyOpenSSL==22.0.0
@@ -28,15 +28,15 @@ ndg-httpsclient==0.5.1
 urllib3==1.26.9  # requests, sentry-sdk
 chardet==4.0.0  # requests
 idna==3.3  # requests
-certifi==2021.10.8  # requests, sentry-sdk
+certifi==2022.5.18.1  # requests, sentry-sdk
 requests==2.27.1
 
 astroid==2.11.5
-pylint==2.13.8
+pylint==2.13.9
 
 six==1.16.0
 ipaddress==1.0.23  # faker
-faker==13.11.0  # factory_boy
+faker==13.11.1  # factory_boy
 factory_boy==3.2.1
 
 ldap3==2.9.1
@@ -47,7 +47,7 @@ s3transfer==0.5.2
 jmespath==1.0.0
 
 botocore>=1.12.198,<1.27.0
-boto3>=1.9.198,<1.23.0
+boto3>=1.9.198,<1.24.0
 
 python-dateutil==2.8.2
 

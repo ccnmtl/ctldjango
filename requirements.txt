@@ -52,7 +52,7 @@ boto3>=1.9.198,<1.25.0
 python-dateutil==2.8.2
 
 python-cas==1.6.0
-requirements/src/django_cas_ng-4.2.2ctl-py2.py3-none-any.whl
+django-cas-ng==4.3.0
 django-indexer==0.3.0
 django-templatetag-sugar==1.0
 django-paging==0.2.5

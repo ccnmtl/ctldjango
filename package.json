@@ -11,6 +11,6 @@
     "eslint-plugin-security": "~1.7.0",
     "mocha": "~10.2.0",
     "requirejs": "~2.3.2",
-    "sinon": "~15.0.0"
+    "sinon": "~15.1.0"
   }
 }

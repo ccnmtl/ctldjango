@@ -7,7 +7,7 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "eslint": "~8.42.0",
+    "eslint": "~8.43.0",
     "eslint-plugin-security": "~1.7.0",
     "mocha": "~10.2.0",
     "requirejs": "~2.3.2",

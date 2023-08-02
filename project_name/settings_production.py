@@ -1,3 +1,4 @@
+import sys
 from {{project_name}}.settings_shared import *  # noqa: F403
 from ccnmtlsettings.production import common
 from django.conf import settings
@@ -22,7 +23,7 @@ except ImportError:
     pass
 
 # Define SENTRY_DSN in local_settings.py
-if hasattr(settings, 'SENTRY_DSN'):
+if ('collectstatic' not in sys.argv) and hasattr(settings, 'SENTRY_DSN'):
     sentry_sdk.init(
         dsn=SENTRY_DSN,  # noqa: F405
         integrations=[DjangoIntegration()],

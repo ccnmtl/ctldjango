@@ -22,8 +22,9 @@ try:
 except ImportError:
     pass
 
-# Define SENTRY_DSN in local_settings.py
-if ('collectstatic' not in sys.argv) and hasattr(settings, 'SENTRY_DSN'):
+if ('migrate' not in sys.argv) and \
+   ('collectstatic' not in sys.argv) and \
+   hasattr(settings, 'SENTRY_DSN'):
     sentry_sdk.init(
         dsn=SENTRY_DSN,  # noqa: F405
         integrations=[DjangoIntegration()],

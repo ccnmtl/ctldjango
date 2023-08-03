@@ -1,6 +1,6 @@
 # flake8: noqa
 from {{project_name}}.settings_shared import *
-from ccnmtlsettings.compose import common
+from ctlsettings.compose import common
 
 locals().update(
     common(

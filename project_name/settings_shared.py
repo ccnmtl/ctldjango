@@ -1,6 +1,6 @@
 # Django settings for {{project_name}} project.
 import os.path
-from ccnmtlsettings.shared import common
+from ctlsettings.shared import common
 
 project = '{{project_name}}'
 base = os.path.dirname(__file__)

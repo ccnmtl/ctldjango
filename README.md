@@ -1,5 +1,10 @@
 `ctldjango` is a standard Django project template tuned to
-implement CTL specific functionality and configuration.
+implement CTL specific functionality and configuration. This
+template includes many dependencies and configurations that aren't
+necessary for most django projects. It's intended to be used as a
+reference, more than a starting point. When setting up a new
+application, it's important to think carefully about exactly what
+you want to use, and what you don't.
 
 ## What's Included
 

@@ -29,7 +29,7 @@ you want to use, and what you don't.
 * `flake8` (http://pypi.python.org/pypi/flake8), `bandit` (https://pypi.org/project/bandit/) and `eslint` (https://eslint.org/) installed and configured for code linting
 * layout based on twitter bootstrap4
 * Google Analytics ready to go
-* See [ccnmtlsettings](https://github.com/ccnmtl/ccnmtlsettings) for more information on CTL settings setup.
+* See [ctlsettings](https://github.com/ccnmtl/ctlsettings) for more information on CTL settings setup.
 
 
 ## How to use

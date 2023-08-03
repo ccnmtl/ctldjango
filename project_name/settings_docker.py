@@ -1,6 +1,6 @@
 # flake8: noqa
 from {{project_name}}.settings_shared import *
-from ccnmtlsettings.docker import common
+from ctlsettings.docker import common
 import os
 
 locals().update(

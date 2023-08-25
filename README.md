@@ -122,3 +122,10 @@ you can put content on the web right away.
 From this point out, it's basic django development. You'll probably
 want to do a `./manage.py startapp` to create your own application
 within the project and so on.
+
+### AWS CodeBuild CD/CI Template files - Optional
+There are two files `buildspec.yml` and `buildspec-staging.yml` within this repository.  This is an optional setup if you want to use AWS CodeBuild for deploying into the ECS stack.
+
+The `buildspec.yml` deploys to the production cluster and the `buildspec-staging.yml` builds into the staging cluster.
+
+More detail information on setting up the AWS ECS and AWS CodeBuild is within our Wiki documentation in the Runbook .

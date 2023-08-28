@@ -1,0 +1,50 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Docker information
+      - docker info
+      - echo Logging in to Amazon ECR...
+      - aws --version
+      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT
+      - REPOSITORY_URI=$ECR_REPOSITORY_URI
+      - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
+      - IMAGE_TAG=staging_${COMMIT_HASH:=latest}
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building the Docker image...
+      - docker build -t $REPOSITORY_URI:latest .
+      - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Start Running tests
+      - docker run --rm -e DEBUG=True -e SECRET_KEY=secret_test_key $REPOSITORY_URI:latest python manage.py test
+      - echo Pushing the Docker images...
+      - echo docker image latest - $REPOSITORY_URI:latest
+      - echo docker image git tag - $REPOSITORY_URI:$IMAGE_TAG 
+      # - docker push $REPOSITORY_URI:latest
+      - docker push $REPOSITORY_URI:$IMAGE_TAG
+      - echo Writing image definitions file...
+      - printf '[{"name":"$ECS_CONTAINER_NAME","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+      - echo Retrieve the ARNs of all task definitions for your family name FOR $ECS_TASK_DEFINITION_FAMILY...
+      - task_definition_arns=$(aws ecs list-task-definitions --family-prefix "$ECS_TASK_DEFINITION_FAMILY" --status ACTIVE --query 'taskDefinitionArns' --output json)
+      - echo Sort the task definition ARNs in descending order to get the latest version...
+      - sorted_task_definition_arns=$(echo "$task_definition_arns" | jq 'sort_by(.) | reverse')
+      - echo Retrieve the latest task definition ARN...
+      - latest_arn=$(echo "$sorted_task_definition_arns" | jq --raw-output '.[0]')
+      - echo Describe the latest task definition and save the JSON to a file...
+      - aws ecs describe-task-definition --task-definition "$latest_arn" --query 'taskDefinition' --output json > previous-task-definition.json
+      - echo Below jq command to remove the warnings from github because the properties are not needed for the ECS deploy...
+      - jq 'del(.compatibilities, .taskDefinitionArn, .requiresAttributes, .revision, .status, .registeredAt, .registeredBy)' previous-task-definition.json > tmpfile && mv tmpfile previous-task-definition.json
+      - echo Modify the JSON to update the image...
+      - jq --arg image "$REPOSITORY_URI:$IMAGE_TAG" '.containerDefinitions[0].image = $image' previous-task-definition.json > task-definition.json      
+      - echo Run aws ecs register task definition...
+      - TASK_DEFINITION_ARN=$(aws ecs register-task-definition --cli-input-json file://task-definition.json --query "taskDefinition.taskDefinitionArn" --output text)
+      - echo Registered new task definition - $TASK_DEFINITION_ARN
+      - echo Updating Staging ECS service
+      - aws ecs update-service --cluster $ECS_CLUSTER_NAME --service $ECS_SERVICE_NAME --task-definition $TASK_DEFINITION_ARN
+artifacts:
+    files: imagedefinitions.json

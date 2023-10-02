@@ -84,7 +84,7 @@ djangorestframework==3.14.0
 django-storages==1.14
 ctlsettings==0.2.0
 
-django-reversion==5.0.5
+django-reversion==5.0.6
 text_unidecode==1.3
 
 nameparser==1.1.3

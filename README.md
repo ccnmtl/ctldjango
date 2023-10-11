@@ -38,7 +38,7 @@ you want to use, and what you don't.
 ### Generate the project
 ```bash
 $ django-admin.py startproject \
-  --template=https://github.com/ccnmtl/ctldjango/archive/master.zip \
+  --template=https://github.com/ccnmtl/ctldjango/archive/main.zip \
   --name=Dockerfile,Makefile,package.json,stats.html \
   --extension=py,yml \
   project_name
@@ -46,7 +46,7 @@ $ django-admin.py startproject \
 Note: On MacOS, sometimes an SSL error will occur when attempting to download the master.zip in this way. To get around this, download a copy of the ctldjango master.zip to your desktop, then execute:
 ```bash
 $ django-admin.py startproject \
-  --template=~/Desktop/ctldjango-master.zip \
+  --template=~/Desktop/ctldjango-main.zip \
   --name=Dockerfile,Makefile,package.json,stats.html \
   --extension=py,yml \
   project_name

@@ -81,7 +81,7 @@ django-flatblocks==1.0.0
 
 djangorestframework==3.14.0
 
-django-storages==1.14
+django-storages==1.14.2
 ctlsettings==0.2.0
 
 django-reversion==5.0.6

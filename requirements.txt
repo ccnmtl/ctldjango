@@ -14,7 +14,7 @@ configparser==6.0.0
 importlib-metadata==7.0.1
 zipp==3.17.0
 pycodestyle==2.11.1
-flake8==6.1.0
+flake8==7.0.0
 tornado==6.4
 beautifulsoup4==4.12.2
 cssselect==1.2.0

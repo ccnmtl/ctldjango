@@ -33,7 +33,7 @@ idna==3.7  # requests
 certifi==2024.2.2  # requests, sentry-sdk
 requests==2.32.2
 
-astroid==3.2.1
+astroid==3.2.2
 pylint==3.2.2
 
 six==1.16.0

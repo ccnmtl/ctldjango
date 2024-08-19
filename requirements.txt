@@ -4,14 +4,14 @@ pytz==2024.1
 asgiref==3.8.1
 httplib2==0.22.0
 feedparser==6.0.11
-Markdown==3.6 # pyup: < 3
+Markdown==3.7 # pyup: < 3
 psycopg[binary]==3.2.1
 versiontools==1.9.1
 statsd==4.0.1
 pep8==1.7.1
 pyflakes==3.2.0
 mccabe==0.7.0
-configparser==7.0.0
+configparser==7.1.0
 importlib-metadata==8.2.0
 zipp==3.20.0
 pycodestyle==2.12.1
@@ -40,7 +40,7 @@ pylint==3.2.6
 six==1.16.0
 ipaddress==1.0.23  # faker
 faker==27.0.0  # factory_boy
-factory_boy==3.3.0
+factory_boy==3.3.1
 
 ldap3==2.9.1
 sqlparse==0.5.1
@@ -49,8 +49,8 @@ sqlparse==0.5.1
 s3transfer==0.10.2
 jmespath==1.0.1
 
-botocore>=1.12.198,<1.35.0
 boto3>=1.9.198,<1.36.0
+botocore>=1.12.198,<1.36.0
 
 python-dateutil==2.9.0.post0
 

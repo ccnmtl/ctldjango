@@ -1,9 +1,7 @@
-import sys
 from {{project_name}}.settings_shared import *  # noqa: F403
-from ctlsettings.production import common
+from ctlsettings.production import common, init_sentry
 from django.conf import settings
-import sentry_sdk
-from sentry_sdk.integrations.django import DjangoIntegration
+
 
 locals().update(
     common(
@@ -17,15 +15,12 @@ locals().update(
         #       s3static=False,
     ))
 
+
 try:
     from {{project_name}}.local_settings import *  # noqa: F403
 except ImportError:
     pass
 
-if ('migrate' not in sys.argv) and \
-   ('collectstatic' not in sys.argv) and \
-   hasattr(settings, 'SENTRY_DSN'):
-    sentry_sdk.init(
-        dsn=SENTRY_DSN,  # noqa: F405
-        integrations=[DjangoIntegration()],
-    )
+
+if hasattr(settings, 'SENTRY_DSN'):
+    init_sentry(SENTRY_DSN)  # noqa F405

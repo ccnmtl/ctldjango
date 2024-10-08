@@ -39,7 +39,7 @@ pylint==3.2.7
 
 six==1.16.0
 ipaddress==1.0.23  # faker
-faker==30.1.0  # factory_boy
+faker==30.3.0  # factory_boy
 factory_boy==3.3.1
 
 ldap3==2.9.1

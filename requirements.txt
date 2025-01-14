@@ -26,7 +26,7 @@ coverage==7.6.1
 pyasn1==0.6.1
 cffi==1.17.1 # pyOpenSSL
 cryptography==44.0.0  # pyOpenSSL
-pyOpenSSL==24.3.0
+pyOpenSSL==25.0.0
 ndg-httpsclient==0.5.1
 urllib3==2.2.3  # requests, sentry-sdk
 chardet==5.2.0  # requests

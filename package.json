@@ -9,7 +9,7 @@
   "devDependencies": {
     "eslint": "~9.26.0",
     "eslint-plugin-security": "~3.0.0",
-    "mocha": "~11.2.2",
+    "mocha": "~11.3.0",
     "requirejs": "~2.3.2",
     "sinon": "~20.0.0"
   }

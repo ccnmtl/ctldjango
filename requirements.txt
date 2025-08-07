@@ -79,7 +79,7 @@ gunicorn==23.0.0
 django-infranil==1.1.0
 django-flatblocks==1.0.0
 
-djangorestframework==3.16.0
+djangorestframework==3.16.1
 
 django-storages==1.14.6
 ctlsettings==0.4.4

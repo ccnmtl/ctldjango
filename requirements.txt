@@ -31,7 +31,7 @@ ndg-httpsclient==0.5.1
 urllib3==2.5.0  # requests, sentry-sdk
 chardet==5.2.0  # requests
 idna==3.10  # requests
-certifi==2025.8.3  # requests, sentry-sdk
+certifi==2025.10.5  # requests, sentry-sdk
 requests==2.32.5
 
 astroid==4.0.0

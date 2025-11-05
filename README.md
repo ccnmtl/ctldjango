@@ -8,8 +8,6 @@ you want to use, and what you don't.
 
 ## What's Included
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/ccnmtl/ctldjango.svg)](https://greenkeeper.io/)
-
 * Default to Python3
 * [django-cas-ng](https://github.com/django-cas-ng/django-cas-ng)
   configured for Columbia's central auth service -

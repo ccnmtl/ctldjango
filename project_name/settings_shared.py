@@ -22,7 +22,6 @@ if DEBUG:
     ]
 
 INSTALLED_APPS += [  # noqa
-    'django_cas_ng',
     'django_bootstrap5',
     'infranil',
     'django_extensions',

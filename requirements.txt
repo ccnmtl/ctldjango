@@ -3,7 +3,6 @@ backports.zoneinfo;python_version<"3.9"
 pytz==2025.2
 asgiref==3.10.0
 httplib2==0.31.0
-feedparser==6.0.12
 Markdown==3.10 # pyup: < 3
 psycopg[binary]==3.2.12
 versiontools==1.9.1
@@ -37,7 +36,6 @@ requests==2.32.5
 astroid==4.0.1
 pylint==4.0.2
 
-six==1.17.0
 ipaddress==1.0.23  # faker
 faker==37.12.0  # factory_boy
 factory_boy==3.3.3
@@ -56,7 +54,6 @@ python-dateutil==2.9.0.post0
 
 python-cas==1.6.0
 django-cas-ng==5.0.1
-django-annoying==0.10.8
 django-appconf==1.1.0
 django-statsd-mozilla==0.4.0
 sentry-sdk==2.43.0

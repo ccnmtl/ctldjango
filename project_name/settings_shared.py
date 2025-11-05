@@ -23,7 +23,6 @@ if DEBUG:
 
 INSTALLED_APPS += [  # noqa
     'django_bootstrap5',
-    'infranil',
     'django_extensions',
     'markdownify.apps.MarkdownifyConfig',
 

@@ -36,7 +36,7 @@ you want to use, and what you don't.
 ```bash
 $ django-admin.py startproject \
   --template=https://github.com/ccnmtl/ctldjango/archive/main.zip \
-  --name=Dockerfile,Makefile,package.json,stats.html \
+  --name=Makefile,package.json,stats.html \
   --extension=py,yml \
   project_name
 ```
@@ -44,7 +44,7 @@ Note: On MacOS, sometimes an SSL error will occur when attempting to download th
 ```bash
 $ django-admin.py startproject \
   --template=~/Desktop/ctldjango-main.zip \
-  --name=Dockerfile,Makefile,package.json,stats.html \
+  --name=Makefile,package.json,stats.html \
   --extension=py,yml \
   project_name
 ```

@@ -54,7 +54,6 @@ no punctuation, etc). It will create a directory called
 `project_name` that has a django project in it.
 
 ### Setup hidden files
-* `mv travis.yml .travis.yml` to activate Travis CI integration
 * `mv gitignore .gitignore` to configure git ignore
 * `mv eslintrc.js .eslintrc.js` to configure eslint
 * `mv bandit .bandit` to configure bandit security linting

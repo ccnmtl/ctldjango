@@ -13,6 +13,14 @@ PROJECT_APPS = [
 
 USE_TZ = True
 
+if DEBUG:
+    INSTALLED_APPS += [
+        'debug_toolbar',
+    ]
+    MIDDLEWARE += [
+        'debug_toolbar.middleware.DebugToolbarMiddleware',
+    ]
+
 INSTALLED_APPS += [  # noqa
     'django_cas_ng',
     'django_bootstrap5',

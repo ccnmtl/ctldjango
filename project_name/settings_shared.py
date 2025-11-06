@@ -15,7 +15,7 @@ USE_TZ = True
 
 INSTALLED_APPS += [  # noqa
     'django_cas_ng',
-    'bootstrap4',
+    'django_bootstrap5',
     'infranil',
     'django_extensions',
     'markdownify.apps.MarkdownifyConfig',

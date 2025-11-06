@@ -1,12 +1,13 @@
-# flake8: noqa
-from {{project_name}}.settings_shared import *
-from ctlsettings.docker import common
 import os
+from {{project_name}}.settings_shared import *  # noqa: F401,F403
 
-locals().update(
-    common(
-        project=project,
-        base=base,
-        STATIC_ROOT=STATIC_ROOT,
-        INSTALLED_APPS=INSTALLED_APPS,
-    ))
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('DATABASE_NAME'),
+        'USER': os.environ.get('DATABASE_USER'),
+        'PASSWORD': os.environ.get('DATABASE_PASSWORD'),
+        'HOST': os.environ.get('DATABASE_HOST'),
+        'PORT': os.environ.get('DATABASE_PORT'),
+    }
+}

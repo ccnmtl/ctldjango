@@ -24,7 +24,7 @@ you want to use, and what you don't.
 * database defaulted to postgresql
 * timezone set
 * `flake8` (http://pypi.python.org/pypi/flake8), `bandit` (https://pypi.org/project/bandit/) and `eslint` (https://eslint.org/) installed and configured for code linting
-* layout based on twitter bootstrap4
+* layout based on twitter bootstrap5
 * Google Analytics ready to go
 * See [ctlsettings](https://github.com/ccnmtl/ctlsettings) for more information on CTL settings setup.
 

@@ -21,6 +21,10 @@ if DEBUG:
         'debug_toolbar.middleware.DebugToolbarMiddleware',
     ]
 
+MIDDLEWARE += [
+    'django.middleware.csrf.CsrfViewMiddleware',
+]
+
 INSTALLED_APPS += [  # noqa
     'django_bootstrap5',
     'django_extensions',

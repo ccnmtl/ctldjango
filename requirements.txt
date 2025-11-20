@@ -1,7 +1,7 @@
 Django>=4.2.14,<6
 backports.zoneinfo;python_version<"3.9"
 pytz==2025.2
-asgiref==3.10.0
+asgiref==3.11.0
 httplib2==0.31.0
 Markdown==3.10 # pyup: < 3
 psycopg[binary]==3.2.12

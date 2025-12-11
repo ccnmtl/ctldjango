@@ -1,5 +1,4 @@
 Django>=4.2.14,<6
-backports.zoneinfo;python_version<"3.9"
 pytz==2025.2
 asgiref==3.11.0
 httplib2==0.31.0

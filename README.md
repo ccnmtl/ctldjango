@@ -55,7 +55,6 @@ no punctuation, etc). It will create a directory called
 
 ### Setup hidden files
 * `mv gitignore .gitignore` to configure git ignore
-* `mv eslintrc.js .eslintrc.js` to configure eslint
 * `mv bandit .bandit` to configure bandit security linting
 
 ### Misc

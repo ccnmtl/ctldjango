@@ -1,4 +1,4 @@
-Django>=4.2.14,<6
+Django>=4.2.14,<7
 pytz==2025.2
 asgiref==3.11.1
 httplib2==0.31.2

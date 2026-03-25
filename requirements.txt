@@ -68,7 +68,7 @@ django-ga-context==0.1.0
 django-impersonate==1.9.5
 gunicorn==25.2.0
 
-djangorestframework==3.17.0
+djangorestframework==3.17.1
 
 django-storages==1.14.6
 ctlsettings==0.4.6

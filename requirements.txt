@@ -71,7 +71,7 @@ gunicorn==26.0.0
 djangorestframework==3.17.1
 
 django-storages==1.14.6
-ctlsettings==0.4.6
+ctlsettings==0.4.7
 
 text_unidecode==1.3
 

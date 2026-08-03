@@ -2,7 +2,7 @@ Django>=4.2.14,<6
 pytz==2026.3.post1
 asgiref==3.12.1
 httplib2==0.32.0
-Markdown==3.10.2 # pyup: < 3
+Markdown==3.10.3 # pyup: < 3
 psycopg[binary]==3.3.4
 versiontools==1.9.1
 statsd==4.0.1

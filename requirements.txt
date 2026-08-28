@@ -63,7 +63,7 @@ django-extensions==4.1
 django-stagingcontext==0.1.0
 django-ga-context==0.1.0
 django-impersonate==1.9.5
-gunicorn==26.1.0
+gunicorn==26.2.0
 
 djangorestframework==3.18.0
 

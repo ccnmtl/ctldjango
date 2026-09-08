@@ -53,7 +53,7 @@ django-statsd-mozilla==0.4.0
 sentry-sdk[django]==2.68.1
 django-bootstrap5==26.3
 
-django-debug-toolbar==7.1.1
+django-debug-toolbar==8.0.0
 
 django-waffle==5.0.0
 

@@ -1,6 +1,6 @@
 Django>=6.1.2,<7
 pytz==2026.5
-asgiref==3.12.1
+asgiref==3.13.0
 httplib2==0.32.0
 Markdown==3.11.1 # pyup: < 3
 psycopg[binary]==3.3.6

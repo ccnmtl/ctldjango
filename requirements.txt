@@ -14,7 +14,7 @@ importlib-metadata==9.1.0
 zipp==4.1.2
 pycodestyle==2.15.0
 flake8==7.4.1
-tornado==6.5.10
+tornado==6.6
 beautifulsoup4==4.15.0
 cssselect==1.6.0
 lxml==6.1.3

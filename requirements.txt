@@ -44,7 +44,7 @@ jmespath==1.1.0
 botocore
 boto3
 
-python-dateutil==2.9.0.post0
+python-dateutil==3.0.0
 
 python-cas==1.7.2
 django-cas-ng==5.1.1
